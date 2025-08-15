@@ -19,7 +19,7 @@ export default () => {
   return (
       <BrowserRouter> 
         <StylesProvider generateClassName={generatedClassName}>
-          <div>
+          <div className="e">
             <Header isSignedIn={isSignedIn} onSignOut={() => setIsSignedIn(false)}/>
             <Suspense fallback={<Progress />}>
               <Switch>
